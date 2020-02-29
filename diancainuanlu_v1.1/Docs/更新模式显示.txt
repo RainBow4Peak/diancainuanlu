@@ -1,0 +1,32 @@
+if(Time_mode==0)
+{
+	Time1_Disp=0x00;  
+	data[4]&=0xbf;				 
+Time2_Disp=0x00;
+	data[4]&=0xef;				 
+Time3_Disp=0x00; 	
+	data[8]&=0x8f;	
+    Open_Disp=0x20; 
+      Close_Disp=0x00;	
+      data[4]&=0xf7;
+}
+if(Time_mode==1)
+{  Time1_Disp=0x40;  				 
+Time2_Disp=0x10;		 
+Time3_Disp=0x00; 	
+data[8]&=0x8f;
+	    Open_Disp=0x20; 
+      Close_Disp=0x00;	
+      data[4]&=0xf7;
+}
+if(Time_mode==2)
+{
+	Time1_Disp=0x00;  
+	data[4]&=0xbf;			 
+Time2_Disp=0x00;
+	data[4]&=0xef;			 
+Time3_Disp=0x70;
+Open_Disp=0x20; 
+      Close_Disp=0x00;	
+      data[4]&=0xf7;
+}

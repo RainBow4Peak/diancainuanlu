@@ -1,0 +1,106 @@
+
+
+switch(key2){
+  case 1:
+        {p++;
+	if(p%2)
+	{
+	Hour1_Set=Time1_Start_Hour1;
+  	Hour2_Set=Time1_Start_Hour2;
+  	Minute1_Set=Time1_Start_Min1;
+  	Minute2_Set=Time1_Start_Min2;
+	Seconds1_Set=Time1_Temp_Low1;
+  	Seconds2_Set=Time1_Temp_Low2;
+	}
+	else
+	{
+//	delay(500);
+	Hour1_Set=10;
+  	Hour2_Set=10;
+  	Minute1_Set=10;
+  	Minute2_Set=10;
+	Seconds1_Set=10;
+  	Seconds2_Set=10;
+	}
+        };break;
+  case 2:
+        {p++;
+	if(p%2)
+	{
+	Hour1_Set=Time1_Start_Hour1;
+  	Hour2_Set=Time1_Start_Hour2;
+  	Minute1_Set=Time1_Start_Min1;
+  	Minute2_Set=Time1_Start_Min2;
+	Seconds1_Set=Time1_Temp_Low1;
+  	Seconds2_Set=Time1_Temp_Low2;
+	}
+	else
+	{
+//	delay(500);
+	Hour1_Set=10;
+  	Hour2_Set=10;
+  	Minute1_Set=Time1_Start_Min1;
+  	Minute2_Set=Time1_Start_Min2;
+	Seconds1_Set=Time1_Temp_Low1;
+  	Seconds2_Set=Time1_Temp_Low2;
+	}
+        };break;
+  case 3:
+        {p++;
+	if(p%2)
+	{
+	Hour1_Set=Time1_Start_Hour1;
+  	Hour2_Set=Time1_Start_Hour2;
+  	Minute1_Set=Time1_Start_Min1;
+  	Minute2_Set=Time1_Start_Min2;
+	Seconds1_Set=Time1_Temp_Low1;
+  	Seconds2_Set=Time1_Temp_Low2;
+	}
+	else
+	{
+//	delay(500);
+	Hour1_Set=Time1_Start_Hour1;
+  	Hour2_Set=Time1_Start_Hour2;
+  	Minute1_Set=10;
+  	Minute2_Set=10;
+	Seconds1_Set=Time1_Temp_Low1;
+  	Seconds2_Set=Time1_Temp_Low2;
+	}
+        };break;
+  case 4:
+        {p++;
+	if(p%2)
+	{
+	Hour1_Set=Time1_Start_Hour1;
+  	Hour2_Set=Time1_Start_Hour2;
+  	Minute1_Set=Time1_Start_Min1;
+  	Minute2_Set=Time1_Start_Min2;
+	Seconds1_Set=Time1_Temp_Low1;
+  	Seconds2_Set=Time1_Temp_Low2;
+	}
+	else
+	{
+//	delay(500);
+	Hour1_Set=Time1_Start_Hour1;
+  	Hour2_Set=Time1_Start_Hour2;
+  	Minute1_Set=Time1_Start_Min1;
+  	Minute2_Set=Time1_Start_Min2;
+	Seconds1_Set=10;
+  	Seconds2_Set=10;
+	}
+        };break;
+       }
+       	Temperature1_Disp=0x08;
+        Temperature2_Disp=0x00;
+	data[2]&=0xf7;
+        LED_Set_Disp();	 
+
+
+
+
+
+
+
+
+
+

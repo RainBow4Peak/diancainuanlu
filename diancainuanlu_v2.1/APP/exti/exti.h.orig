@@ -1,0 +1,16 @@
+#ifndef _exti_H
+#define _exti_H
+
+
+#include "system.h"
+
+void My_EXTI_Init(void);
+
+struct BUTTON_STATE{
+	int keyNum;
+	int clickCount;
+};
+
+ extern struct BUTTON_STATE buttonState;
+
+#endif
